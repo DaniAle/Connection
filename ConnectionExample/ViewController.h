@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <NSURLConnectionDelegate>
 
+@property (weak, nonatomic) IBOutlet UITextView *textAreaResponse;
+
+
+- (IBAction)makeRequest:(id)sender;
+- (IBAction)makeSynchronousRequest:(id)sender;
 @end
