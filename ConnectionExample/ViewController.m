@@ -95,8 +95,8 @@
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
     NSLog(@"***** La petición se realizó con exito *******\n");
     
-    NSLog(@"Code error %@", [response URL]);
-    NSLog(@"Domain error %@", [response MIMEType]);
+    NSLog(@"Url a la que se realizó el request %@", [response URL]);
+    NSLog(@"MimeType %@", [response MIMEType]);
     
     NSLog(@"************\n");
     
